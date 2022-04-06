@@ -5,12 +5,19 @@ body {
 	font-size: 16px;
 	margin: 0;
 }
+h1 {
+	font-weight: 600;
+	font-size: 3.125rem;
+}
+h2 {
+	font-weight: 400;
+}
 /* HERO */
 .hero {
 	height: 100vh;
 	color: #fff;
 	background: black;
-	background: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.6)),
+	background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.6)),
 		url('./images/Netflix_Hero.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -18,12 +25,13 @@ body {
 	overflow: hidden;
 }
 .hero .hero__wrap {
-	margin: 20px 55px;
+	height: 100%;
 }
 .hero .hero__wrap nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin: 20px 55px;
 }
 .hero .hero__wrap nav svg {
 	width: 8.375rem;
@@ -40,4 +48,8 @@ body {
 	padding: 8px;
 	color: #fff;
 	background: #e50914;
+}
+.hero .hero__wrap .hero__wrap--content {
+	padding: 160px 45px;
+	text-align: center;
 }
