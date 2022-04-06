@@ -6,12 +6,19 @@ body {
 	margin: 0;
 }
 h1 {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 3.125rem;
+	margin: 0;
 }
 h2 {
 	font-weight: 400;
+	font-size: 1.625rem;
 }
+h3 {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
 /* HERO */
 .hero {
 	height: 100vh;
@@ -49,7 +56,8 @@ h2 {
 	color: #fff;
 	background: #e50914;
 }
-.hero .hero__wrap .hero__wrap--content {
-	padding: 160px 45px;
+.hero .hero__wrap .hero__content {
+	padding: 120px 45px;
 	text-align: center;
 }
+/* .hero .hero__wrap .hero__content; */
