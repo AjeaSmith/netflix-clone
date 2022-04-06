@@ -18,7 +18,7 @@ body {
 	overflow: hidden;
 }
 .hero .hero__wrap {
-	margin: 25px 55px;
+	margin: 20px 55px;
 }
 .hero .hero__wrap nav {
 	display: flex;
@@ -26,8 +26,8 @@ body {
 	justify-content: space-between;
 }
 .hero .hero__wrap nav svg {
-	width: 6.75rem;
-	height: 2rem;
+	width: 8.375rem;
+	height: 2.25rem;
 }
 .hero .hero__wrap nav ul {
 	list-style: none;
