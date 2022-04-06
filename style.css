@@ -8,7 +8,6 @@ body {
 /* HERO */
 .hero {
 	height: 100vh;
-	padding: 45px 45px;
 	color: #fff;
 	background: black;
 	background: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.6)),
@@ -18,19 +17,22 @@ body {
 	background-position: center;
 	overflow: hidden;
 }
-.hero nav {
+.hero .hero__wrap {
+	margin: 25px 55px;
+}
+.hero .hero__wrap nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-.hero nav svg {
+.hero .hero__wrap nav svg {
 	width: 6.75rem;
 	height: 2rem;
 }
-.hero nav ul {
+.hero .hero__wrap nav ul {
 	list-style: none;
 }
-.hero nav ul li button {
+.hero .hero__wrap nav ul li button {
 	border: none;
 	outline: none;
 	width: 80px;
