@@ -14,7 +14,7 @@ h1 {
 	margin: 0;
 }
 h2 {
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 1.625rem;
 	margin-top: 0.5em;
 	margin-bottom: 1.2em;
@@ -34,8 +34,8 @@ h3 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-    overflow: hidden;
-    border-bottom: 8px solid #222;
+	overflow: hidden;
+	border-bottom: 8px solid #222;
 }
 .hero .hero__wrap {
 	height: 100%;
@@ -119,8 +119,8 @@ h3 {
 	.hero .hero__wrap .hero__content--form form input[type='text'] {
 		width: 90%;
 		margin-bottom: 1.5em;
-        padding: 0.8em 1em;
-        font-size: 1rem;
+		padding: 0.8em 1em;
+		font-size: 1rem;
 	}
 	.hero .hero__wrap .hero__content--form form input[type='submit'] {
 		width: 130px;
@@ -162,3 +162,43 @@ h3 {
 		font-size: 16px;
 	}
 }
+
+/* Section 1 */
+.section1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: black;
+	padding: 45px 45px;
+	color: #fff;
+	border-bottom: 8px solid #222;
+}
+.section1 .section1__content {
+	width: 40%;
+	padding-right: 3rem;
+}
+.section1 .section1__content h1 {
+	margin-bottom: 0.5rem;
+}
+.section1 .section1__content h2 {
+	margin-bottom: 0;
+}
+.section1 .section1__video {
+	position: relative;
+	width: 42%;
+}
+.section1 .section1__video img {
+	position: relative;
+	max-width: 100%;
+	z-index: 2;
+}
+.section1 .section1__video .section1__video--wrap {
+	position: absolute;
+	top: 77px;
+	width: 73%;
+	left: 66px;
+}
+.section1 .section1__video .section1__video--wrap video {
+	width: 100%;
+}
+
