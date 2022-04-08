@@ -115,7 +115,42 @@ h3 {
 		align-items: center;
 	}
 	.hero .hero__wrap .hero__content--form form input[type='text'] {
-        width: 90%;
-        margin-bottom: 1.5em;
+		width: 90%;
+		margin-bottom: 1.5em;
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+	h1 {
+		font-size: 3.125rem;
+	}
+	h2 {
+		font-size: 1.625rem;
+		margin-bottom: 0;
+	}
+	h3 {
+		font-size: 23px;
+		padding: 0px 17%;
+		margin-bottom: 0.5em;
+	}
+	.hero .hero__wrap .hero__content {
+		padding: 100px 45px;
+	}
+	.hero .hero__wrap .hero__content--form form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.hero .hero__wrap .hero__content--form form input[type='text'] {
+		margin-bottom: 1.5em;
+	}
+	.hero .hero__wrap .hero__content--form form input[type='submit'] {
+		width: 120px;
+		cursor: pointer;
+		background-color: #e50914;
+		color: #fff;
+		border: none;
+		outline: none;
+		letter-spacing: normal;
+		font-size: 16px;
 	}
 }
