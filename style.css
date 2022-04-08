@@ -12,7 +12,9 @@ h1 {
 }
 h2 {
 	font-weight: 400;
-	font-size: 1.625rem;
+    font-size: 1.625rem;
+    margin-top: 0.5em;
+    margin-bottom: 1.2em;
 }
 h3 {
 	font-size: 1.2rem;
@@ -60,4 +62,23 @@ h3 {
 	padding: 120px 45px;
 	text-align: center;
 }
-/* .hero .hero__wrap .hero__content; */
+.hero .hero__wrap .hero__content--form form {
+	width: 100%;
+}
+.hero .hero__wrap .hero__content--form form input {
+	font-size: 1.2rem;
+	padding: 0.8em 1em;
+}
+.hero .hero__wrap .hero__content--form form input[type='text'] {
+    width: 40%;
+    border: none;
+}
+.hero .hero__wrap .hero__content--form form input[type='submit'] {
+	width: 20%;
+	cursor: pointer;
+	background-color: #e50914;
+	color: #fff;
+	border: none;
+    outline: none;
+    letter-spacing: 0.1em;
+}
