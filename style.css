@@ -70,7 +70,7 @@ h3 {
 	padding: 0.8em 1em;
 }
 .hero .hero__wrap .hero__content--form form input[type='text'] {
-    width: 40%;
+    width: 500px;
     border: none;
 }
 .hero .hero__wrap .hero__content--form form input[type='submit'] {
