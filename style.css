@@ -5,6 +5,9 @@ body {
 	font-size: 16px;
 	margin: 0;
 }
+img {
+	width: 100%;
+}
 h1 {
 	font-weight: 500;
 	font-size: 3.125rem;
@@ -12,9 +15,9 @@ h1 {
 }
 h2 {
 	font-weight: 400;
-    font-size: 1.625rem;
-    margin-top: 0.5em;
-    margin-bottom: 1.2em;
+	font-size: 1.625rem;
+	margin-top: 0.5em;
+	margin-bottom: 1.2em;
 }
 h3 {
 	font-size: 1.2rem;
@@ -70,8 +73,8 @@ h3 {
 	padding: 0.8em 1em;
 }
 .hero .hero__wrap .hero__content--form form input[type='text'] {
-    width: 500px;
-    border: none;
+	width: 500px;
+	border: none;
 }
 .hero .hero__wrap .hero__content--form form input[type='submit'] {
 	width: 160px;
@@ -79,6 +82,40 @@ h3 {
 	background-color: #e50914;
 	color: #fff;
 	border: none;
-    outline: none;
-    letter-spacing: 0.1em;
+	outline: none;
+	letter-spacing: 0.1em;
+}
+/* HERO - MOBILE */
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 1.75rem;
+		margin-bottom: 0.6em;
+	}
+	h2 {
+		font-size: 1.125rem;
+	}
+	h3 {
+		font-size: 18px;
+	}
+	.hero {
+		height: 80vh;
+	}
+	.hero .hero__wrap nav {
+		margin: 10px 30px;
+	}
+	.hero .hero__wrap nav svg {
+		width: 6.375rem;
+	}
+	.hero .hero__wrap .hero__content {
+		padding: 50px 30px;
+	}
+	.hero .hero__wrap .hero__content--form form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.hero .hero__wrap .hero__content--form form input[type='text'] {
+        width: 90%;
+        margin-bottom: 1.5em;
+	}
 }
