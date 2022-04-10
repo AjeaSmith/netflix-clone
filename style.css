@@ -460,3 +460,114 @@ h3 {
 		font-size: 1.625rem;
 	}
 }
+
+/* --------- FAQ STYLES ----------- */
+
+/* FAQ */
+.FAQ {
+	background: black;
+	padding: 50px 0px;
+	border-bottom: 8px solid #222;
+	color: #fff;
+}
+.FAQ .FAQ__wrap {
+	max-width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+}
+.FAQ .FAQ__wrap h1 {
+	font-size: 1.625rem;
+}
+.FAQ .FAQ__content {
+	margin: 1.25em auto;
+	max-width: 815px;
+	font-size: 1.125rem;
+}
+.FAQ .FAQ__content details {
+	margin-bottom: 8px;
+}
+.FAQ .FAQ__content details summary {
+	background: #303030;
+	padding: 0.8em 2.2em 0.8em 1.2em;
+}
+.FAQ .FAQ__content .FAQ__content--answer {
+	background: #303030;
+	padding: 1.2em;
+	border-top: 1px solid black;
+	font-weight: 300;
+}
+
+.FAQ .FAQ__wrap .FAQ__form h3 {
+	font-size: 18px;
+    max-width: 450px;
+    margin: 0.9em auto;
+}
+.FAQ .FAQ__wrap .FAQ__form form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.FAQ .FAQ__wrap .FAQ__form form input {
+	font-size: 1.2rem;
+	padding: 0.6em 1em;
+	width: 100%;
+	max-width: 82;
+	max-width: 500px;
+	margin-bottom: 0.8em;
+}
+.FAQ .FAQ__wrap .FAQ__form form input[type='text'] {
+	margin-bottom: 1.5em;
+}
+.FAQ .FAQ__wrap .FAQ__form form input[type='submit'] {
+	width: 120px;
+	cursor: pointer;
+	background-color: #e50914;
+	color: #fff;
+	border: none;
+	outline: none;
+	letter-spacing: normal;
+	font-size: 16px;
+}
+
+@media only screen and (min-width: 550px) and (max-width: 949px) {
+	.FAQ {
+		padding: 75px 45px;
+	}
+	.FAQ .FAQ__wrap h1 {
+		font-size: 2.5rem;
+	}
+	.FAQ .FAQ__content {
+		width: 90%;
+		margin: 1.5em auto;
+		font-size: 1.25rem;
+	}
+}
+@media only screen and (min-width: 950px) {
+	.FAQ {
+		padding: 75px 45px;
+	}
+	.FAQ .FAQ__wrap h1 {
+		font-size: 3.125rem;
+	}
+	.FAQ .FAQ__content {
+		width: 75%;
+		margin: 2em auto;
+		font-size: 1.625rem;
+	}
+	.FAQ .FAQ__wrap .FAQ__form h3 {
+		font-size: 1.2rem;
+	}
+	.FAQ .FAQ__wrap .FAQ__form form {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	.FAQ .FAQ__wrap .FAQ__form form input {
+		margin-bottom: 0;
+	}
+	.FAQ .FAQ__wrap .FAQ__form form input[type='submit'] {
+		margin-bottom: 0;
+		padding: 0.95em;
+	}
+}
