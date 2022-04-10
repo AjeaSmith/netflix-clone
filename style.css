@@ -168,37 +168,41 @@ h3 {
 
 /* SECTION 1 */
 .section1 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
 	text-align: center;
 	background: black;
 	padding: 50px 5%;
 	color: #fff;
 	border-bottom: 8px solid #222;
 }
-.section1 .section1__content {
+.section1 .section1__wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+.section1 .section1__wrap .section1__content {
 	width: 100%;
 	padding-right: 0;
 }
-.section1 .section1__content h1 {
+.section1 .section1__wrap .section1__content h1 {
 	margin-bottom: 0.5rem;
 	font-size: 1.625rem;
 }
-.section1 .section1__content h2 {
+.section1 .section1__wrap .section1__content h2 {
 	margin-bottom: 0;
 }
-.section1 .section1__video {
+.section1 .section1__wrap .section1__video {
 	position: relative;
 	width: 100%;
 }
-.section1 .section1__video img {
+.section1 .section1__wrap .section1__video img {
 	position: relative;
 	max-width: 600px;
 	z-index: 2;
 }
-.section1 .section1__video .section1__video--wrap {
+.section1 .section1__wrap .section1__video .section1__video--wrap {
 	width: 100%;
 	height: 100%;
 	max-width: 73%;
@@ -207,32 +211,45 @@ h3 {
 	top: 21%;
 	left: 13%;
 }
-.section1 .section1__video .section1__video--wrap video {
+.section1 .section1__wrap .section1__video .section1__video--wrap video {
 	width: 100%;
 	height: 100%;
 }
 /* SECTION 1 - MOBILE */
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 550px) {
 	.section1 {
+		padding: 75px 45px;
+		/* text-align: center; */
+	}
+	.section1 .section1__wrap .section1__content h1 {
+		font-size: 2.5rem;
+	}
+	.section1 .section1__wrap .section1__content h2 {
+		font-size: 1.25rem;
+		margin-bottom: 0;
+	}
+}
+@media screen and (min-width: 950px) {
+	.section1 .section1__wrap {
 		text-align: center;
 		flex-direction: row;
 		gap: 3em;
 	}
-	.section1 .section1__content {
-		width: 100%;
+	.section1 .section1__wrap .section1__content {
+		width: 52%;
 		padding-right: 0;
 		text-align: left;
 		max-width: 525px;
 	}
-	.section1 .section1__content h1 {
+	.section1 .section1__wrap .section1__content h1 {
 		font-size: 3.125rem;
 	}
-	.section1 .section1__content h2 {
+	.section1 .section1__wrap .section1__content h2 {
 		font-size: 1.625rem;
 		max-width: 600px;
 		margin: 0 auto;
 	}
-	.section1 .section1__video {
+	.section1 .section1__wrap .section1__video {
 		position: relative;
 		width: 42%;
 		max-width: 600px;
@@ -247,18 +264,22 @@ h3 {
 	color: #fff;
 	background: black;
 	border-bottom: 8px solid #222;
+	padding: 50px 5%;
+}
+.section2 .section2__wrap {
 	display: flex;
 	flex-direction: column-reverse;
 	align-items: center;
 	justify-content: center;
-    padding: 50px 5%;
-    text-align: center;
+	text-align: center;
+	max-width: 1100px;
+	margin: 0 auto;
 }
-.section2 .section2__image {
+.section2 .section2__wrap .section2__image {
 	width: 100%;
 	max-width: 600px;
 }
-.section2 .section2__content h1 {
+.section2 .section2__wrap .section2__content h1 {
 	font-size: 1.625rem;
 	margin-bottom: 0.6rem;
 }
@@ -268,34 +289,39 @@ h3 {
 		padding: 75px 45px;
 		text-align: center;
 	}
-	.section2 .section2__content h1 {
+	.section2 .section2__wrap .section2__content h1 {
 		font-size: 2.5rem;
 	}
-	.section2 .section2__content h2 {
+	.section2 .section2__wrap .section2__content h2 {
 		font-size: 1.25rem;
 		margin-bottom: 0;
 	}
 }
 @media screen and (min-width: 950px) {
 	.section2 {
-        flex-direction: row;
-        justify-content: space-between;
+		flex-direction: row;
+		justify-content: space-between;
 		text-align: left;
 		gap: 2em;
 	}
-	.section2 .section2__content {
+	.section2 .section2__wrap {
+		text-align: left;
+		flex-direction: row;
+		gap: 3em;
+	}
+	.section2 .section2__wrap .section2__content {
 		width: 52%;
 	}
-	.section2 .section2__content h1 {
+	.section2 .section2__wrap .section2__content h1 {
 		font-size: 3.125rem;
 		line-height: 1.1;
 		margin-bottom: 0.5rem;
 	}
-	.section2 .section2__content h2 {
+	.section2 .section2__wrap .section2__content h2 {
 		font-size: 1.625rem;
 		margin: 0.3rem 0;
 	}
-	.section2 .section2__image {
+	.section2 .section2__wrap .section2__image {
 		width: 42%;
 		max-width: 600px;
 	}
@@ -304,32 +330,77 @@ h3 {
 /* --------- SECTION 3 STYLES ----------- */
 
 /* SECTION 3 */
-.section3{
-    background: black;
-    color: #fff;
-    padding: 50px 5%;
-    text-align: center;
-    border-bottom: 8px solid #222;
+.section3 {
+	background: black;
+	color: #fff;
+	padding: 50px 5%;
+	text-align: center;
+	border-bottom: 8px solid #222;
 }
-.section3 .section3__video {
+.section3 .section3__wrap {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+.section3 .section3__wrap .section3__video {
 	position: relative;
 	width: 100%;
 }
-.section3 .section3__video img {
+.section3 .section3__wrap .section3__video img {
 	position: relative;
 	max-width: 600px;
 	z-index: 2;
 }
-.section3 .section3__video .section3__video--wrap {
-	width: 100%;
-    height: 100%;
-    max-width: 61%;
-    max-height: 54%;
-    position: absolute;
-    top: 7%;
-    left: 19%;
-}
-.section3 .section3__video .section3__video--wrap video {
+.section3 .section3__wrap .section3__video .section3__video--wrap {
 	width: 100%;
 	height: 100%;
+	max-width: 61%;
+	max-height: 54%;
+	position: absolute;
+	top: 7%;
+	left: 19%;
+}
+.section3 .section3__wrap .section3__video .section3__video--wrap video {
+	width: 100%;
+	height: 100%;
+}
+@media only screen and (min-width: 550px) and (max-width: 949px) {
+	.section3 {
+		padding: 70px 45px;
+	}
+	.section3 .section3__wrap {
+		flex-direction: column;
+	}
+	.section3 .section3__wrap .section3__content h1 {
+		font-size: 2.5rem;
+	}
+	.section3 .section3__wrap .section3__content h2 {
+		font-size: 1.25rem;
+	}
+}
+@media only screen and (min-width: 950px) {
+	.section3 .section3__wrap {
+		flex-direction: row;
+	}
+	.section3 .section3__wrap .section3__content {
+		padding-right: 3rem;
+		width: 52%;
+		text-align: left;
+	}
+	.section3 .section3__wrap .section3__video {
+		width: 48%;
+	}
+	.section3 .section3__wrap .section3__video .section3__video--wrap {
+		width: 100%;
+		height: 100%;
+		max-width: 61%;
+		max-height: 54%;
+		position: absolute;
+		top: 7%;
+		left: 19%;
+	}
 }
